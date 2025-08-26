@@ -5,6 +5,14 @@ class Prato{
     private string $nome;
     private float $valor;
 
+    //Métodos
+
+
+    public function __toString()
+    {
+        return $this->numero . " | " . $this->nome . " | " . $this->valor;
+    }
+
     //GETs e SETs
     
 
