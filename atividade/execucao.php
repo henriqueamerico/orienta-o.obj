@@ -29,6 +29,7 @@ $rf->setValor(70.00);
 
 
 $pratos = array($cm, $pm, $mc, $bp, $rf);
+$pedidos = array();
 
 do {
     echo "\n\n----MENU-----\n";
@@ -70,12 +71,20 @@ do {
 
 
         $ped->setPrato($numEscolhido);
+
+        array_push($pedidos, $ped);
     }
 
     if ($opcao == 2) {
 
     }
 
+    if ($opcao == 3) {
+        print_r($pedidos);
+    }
+
 
 } while ($opcao != 0);
 echo ("Programa finalizado! \n");
+
+
